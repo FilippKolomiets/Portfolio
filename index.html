@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kolomiets Filipp – Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="preloader-text">
+      loading<span class="preloader-dot">.</span><span class="preloader-dot">.</span><span class="preloader-dot">.</span>
+    </div>
+    <div class="preloader-shape shape1"></div>
+    <div class="preloader-shape shape2"></div>
+    <div class="preloader-shape shape3"></div>
+    <div class="preloader-shape shape4"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#about">About</a></li>
+        <li class="nav__item"><a href="#skills">Skills</a></li>
+        <li class="nav__item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav__item"><a href="#contacts">Contacts</a></li>
+      </ul>
+      <div class="theme-switcher">
+        <input type="checkbox" id="theme-toggle" class="theme-switcher__checkbox"/>
+        <label for="theme-toggle" class="theme-switcher__slider"></label>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / TYPING -->
+    <section id="about" class="hero" style="position: relative;">
+      <div class="typing-block">
+        <div class="typing-line">
+          <span id="typed1-accent" class="accent-color"></span>
+          <span id="typed1-rest"></span>
+        </div>
+        <div class="typing-line"><span id="typed2"></span></div>
+        <div class="typing-line"><span id="typed3"></span></div>
+        <div class="typing-line"><span id="typed4"></span></div>
+        <div class="typing-line"><span id="typed5"></span></div>
+        <span id="typing-cursor"></span>
+      </div>
+      <div class="js-floating-tools">
+        </div>
+    </div>
+      <button class="cta">Let’s check!</button>
+       
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section reveal">
+      <div class="skills__inner">
+        <div class="skills__column hard">
+          <h2 class="skills__title"><span class="accent-color">Hard</span> skills</h2>
+          <ul class="skills__list">
+            <li class="skill-card">HTML (HTML5), JSX</li>
+            <li class="skill-card">CSS (CSS3), SASS (SCSS)</li>
+            <li class="skill-card">JavaScript (ES6+, OOP), TypeScript</li>
+            <li class="skill-card">React Native</li>
+            <li class="skill-card">Figma, Photoshop</li>
+            <li class="skill-card">Git (GitHub)</li>
+          </ul>
+        </div>
+        <div class="skills__column soft">
+          <h2 class="skills__title"><span class="accent-color">Soft</span> skills</h2>
+          <ul class="skills__list">
+            <li class="skill-card">I responsibly plan my work and efficiently manage my time to always meet deadlines.</li>
+            <li class="skill-card">I demand high code quality and strictly adhere to the team’s coding style.</li>
+            <li class="skill-card">I pay close attention to the details of technical specifications and quickly grasp project requirements.</li>
+            <li class="skill-card">I excel at working in a team and easily find common ground with designers, managers, and fellow developers.</li>
+            <li class="skill-card">I communicate my thoughts clearly and ask precise questions to resolve tasks swiftly.</li>
+            <li class="skill-card">I am open to constructive criticism and committed to continuous professional and personal growth.</li>
+            <li class="skill-card">I am motivated to learn new technologies and ready to quickly master your company’s tools and processes.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- PORTFOLIO -->
+ <section id="portfolio" class="portfolio section reveal">
+  <h2 class="section__title">
+    My <span class="accent-color">portfolio</span>
+  </h2>
+  <ul class="portfolio__list">
+
+    <!-- 1. TodoList -->
+    <li class="project-card">
+      <div class="project-card__inner">
+        <img
+          src="images/todolist.png"
+          alt="TodoList screenshot"
+          class="project-card__img"
+        />
+        <div class="project-card__content">
+          <h3 class="project-card__title">
+            <a href="https://filippkolomiets.github.io/TODOlist/" target="_blank" rel="noopener">
+              TodoList
+              <img
+                src="images/icons/external-link.svg"
+                alt="external link"
+                class="external-link-icon"
+              />
+            </a>
+          </h3>
+          <p class="project-description">
+            A simple TodoList application built with HTML, CSS, JavaScript and using LocalStorage.
+          </p>
+          <ul class="project-tools-icons">
+            <li><img src="images/icons/html.svg" alt="HTML5"></li>
+            <li><img src="images/icons/css.svg" alt="CSS3"></li>
+            <li><img src="images/icons/javascript.svg" alt="JavaScript"></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <!-- 2. InventoryDemo -->
+    <li class="project-card">
+      <div class="project-card__inner">
+        <img
+          src="images/inventory-demo.png"
+          alt="InventoryDemo screenshot"
+          class="project-card__img"
+        />
+        <div class="project-card__content">
+          <h3 class="project-card__title">
+            <a href="https://your-inventory-link.com" target="_blank" rel="noopener">
+              InventoryDemo
+              <img
+                src="images/icons/external-link.svg"
+                alt="external link"
+                class="external-link-icon"
+              />
+            </a>
+            <span class="update-now">Update Now!</span>
+          </h3>
+          <p class="project-description">
+            inventoryDemo built with React and TypeScript, using React-DnD for drag-and-drop.
+          </p>
+          <ul class="project-tools-icons">
+            <li><img src="images/icons/react.svg" alt="React"></li>
+            <li><img src="images/icons/typescript.svg" alt="TypeScript"></li>
+            <li><img src="images/icons/javascript.svg" alt="JavaScript"></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <!-- 3. WeatherApp -->
+    <li class="project-card">
+      <div class="project-card__inner">
+        <img
+          src="images/weather-app.png"
+          alt="WeatherApp screenshot"
+          class="project-card__img"
+        />
+        <div class="project-card__content">
+          <h3 class="project-card__title">
+            <a href="https://filippkolomiets.github.io/WeatherApp/" target="_blank" rel="noopener">
+              WeatherApp
+              <img
+                src="images/icons/external-link.svg"
+                alt="external link"
+                class="external-link-icon"
+              />
+            </a>
+          </h3>
+          <p class="project-description">
+            WeatherApp using JavaScript, HTML and CSS with real-time API integration.
+          </p>
+          <ul class="project-tools-icons">
+            <li><img src="images/icons/html.svg" alt="HTML5"></li>
+            <li><img src="images/icons/css.svg" alt="CSS3"></li>
+            <li><img src="images/icons/javascript.svg" alt="JavaScript"></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</section>
+
+<footer id="contacts" class="footer-block">
+  <div class="footer-block__inner">
+    <div class="footer-block__top">
+      <div class="footer-block__text">
+        <p class="footer-block__line1">Do you want to ask</p>
+        <p class="footer-block__line2"><span>something interesting?</span></p>
+      </div>
+
+      <div class="footer-block__buttons-group">
+        <div class="footer-block__icons">
+          <a
+            href="https://github.com/FilippKolomiets"
+            target="_blank"
+            aria-label="GitHub"
+            class="footer-icon footer-icon--github"
+          >
+            <img src="images/icons/github.svg" alt="GitHub" />
+          </a>
+          <a
+            href="https://t.me/Gogulich"
+            target="_blank"
+            aria-label="Telegram"
+            class="footer-icon footer-icon--telegram"
+          >
+            <img src="images/icons/telegram-1.svg" alt="Telegram" />
+          </a>
+          <a
+            href="mailto:fkolomiets20@gmail.com"
+            aria-label="Email"
+            class="footer-icon"
+          >
+            <img src="images/icons/official-gmail-icon-2020-.svg" alt="Email" />
+          </a>
+        </div>
+        <p class="footer-block__copy">© Filipp Kolomiets, 2025</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
