@@ -1,0 +1,36 @@
+.preloaderOverlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #1e1b29, #2a2035);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.6s, visibility 0.6s;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloaderText {
+  color: var(--accent);
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+}
+
+.preloaderDot {
+  display: inline-block;
+  opacity: 0.3;
+  animation: blink-dot 1.2s infinite;
+}
+.preloaderDot:nth-child(2) { animation-delay: 0.2s; }
+.preloaderDot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 1;   }
+}
+
+

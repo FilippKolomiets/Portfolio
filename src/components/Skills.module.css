@@ -1,0 +1,61 @@
+.section {
+  padding: 5rem 8vw;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+  position: relative;
+  top: -5px;
+  color: var(--text);
+  transition: color var(--transition);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  padding: 1rem 1rem 1rem 2rem;
+  background: #1a1a28;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    background  var(--transition),
+    color var(--transition);
+  color: var(--text);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 1rem;
+  transform: translateY(-50%);
+  width: 0.7rem; height: 0.7rem;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(92,219,149,0.4);
+}
+
+:global(.light) .card {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: var(--text-light);
+}

@@ -1,0 +1,132 @@
+:global(#typing-cursor) {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 3px;
+  height: 1.2em;
+  background: var(--accent);
+  margin-left: 2px;
+  animation: blink 0.8s steps(2) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 8vw;
+}
+.typingBlock { position: relative; }
+.typingLine {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  margin-bottom: 0.1rem;
+  white-space: nowrap;
+}
+.accentColor { color: var(--accent); }
+
+#typing-cursor {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 3px;
+  height: 1.2em;
+  background: var(--accent);
+  margin-left: 2px;
+  animation: blink 0.8s steps(2) infinite;
+}
+@keyframes blink {50% {opacity:0;}}
+
+.jsFloatingTools {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  top: 80px;
+  height: calc(100% - 80px);
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  @media (max-width: 768px) {
+  .jsFloatingTools {
+    position: relative;   
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: 200px;        
+    padding: 0 1.5rem 5rem;    
+    overflow: hidden;
+    pointer-events: none;
+    visibility: visible;
+  }
+}
+  .jsFloatingTools .code-signs__sign:nth-child(odd) {
+    display: none;
+  }
+}
+
+
+.codeSignSign {
+  position: absolute;
+  padding: 0.4rem 0.8rem;
+  background: rgba(18, 18, 18, 0.6);
+  color: var(--accent);
+  border-radius: 0.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+  animation:
+    floatAnim var(--fs-duration, 8s) ease-in-out infinite,
+    fadeIn 1s forwards;
+  animation-delay: var(--fs-delay, 0s);
+}
+
+:global(body.light) :local(.codeSignSign) {
+  background: rgba(92, 219, 149, 0.2);
+  color: var(--bg-dark);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+@keyframes floatAnim {
+  0% {
+    transform: translate(0, 0) rotate(var(--fs-rotate));
+  }
+  25% {
+    transform: translate(-15px, -10px) rotate(var(--fs-rotate));
+  }
+  50% {
+    transform: translate(10px, 15px) rotate(var(--fs-rotate));
+  }
+  75% {
+    transform: translate(-10px, 10px) rotate(var(--fs-rotate));
+  }
+  100% {
+    transform: translate(0, 0) rotate(var(--fs-rotate));
+  }
+}
+
+
+#typed3b {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #typed3b {
+    display: inline;
+  }
+}

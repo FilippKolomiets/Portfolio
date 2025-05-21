@@ -1,0 +1,13 @@
+
+.root {
+  --card-bg: #1a1a28;
+  --card-shadow: rgba(0,0,0,0.6);
+  --tools-bg: var(--card-bg);
+  --tools-shadow: var(--card-shadow);
+}
+.light {
+  --card-bg: var(--bg-light);
+  --card-shadow: rgba(0,0,0,0.1);
+  --tools-bg: var(--bg-light);
+  --tools-shadow: rgba(255,255,255,0.6);
+}
